@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class RDAppController;
+
 @interface RDAppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UIWindow*     window;
+@property (strong) RDAppController*         appController;
 
 @end

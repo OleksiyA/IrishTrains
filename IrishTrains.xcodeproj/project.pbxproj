@@ -16,14 +16,32 @@
 		7AE1E06E174417E800A94C38 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE1E06D174417E800A94C38 /* Default.png */; };
 		7AE1E070174417E800A94C38 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE1E06F174417E800A94C38 /* Default@2x.png */; };
 		7AE1E072174417E800A94C38 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE1E071174417E800A94C38 /* Default-568h@2x.png */; };
-		7AE1E075174417E800A94C38 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE1E073174417E800A94C38 /* MainStoryboard_iPhone.storyboard */; };
-		7AE1E078174417E800A94C38 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE1E076174417E800A94C38 /* MainStoryboard_iPad.storyboard */; };
+		7AE1E075174417E800A94C38 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE1E073174417E800A94C38 /* MainStoryboard.storyboard */; };
 		7AE1E07B174417E800A94C38 /* RDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E07A174417E800A94C38 /* RDViewController.m */; };
 		7AE1E083174417E800A94C38 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE1E082174417E800A94C38 /* SenTestingKit.framework */; };
 		7AE1E084174417E800A94C38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE1E05B174417E700A94C38 /* UIKit.framework */; };
 		7AE1E085174417E800A94C38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE1E05D174417E700A94C38 /* Foundation.framework */; };
 		7AE1E08D174417E800A94C38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AE1E08B174417E800A94C38 /* InfoPlist.strings */; };
 		7AE1E090174417E800A94C38 /* IrishTrainsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E08F174417E800A94C38 /* IrishTrainsTests.m */; };
+		7AE1E09D1744197200A94C38 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE1E09C1744197200A94C38 /* CoreData.framework */; };
+		7AE1E09F1744197800A94C38 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE1E09E1744197800A94C38 /* CoreLocation.framework */; };
+		7AE1E0AA174421F300A94C38 /* libGTMHTTPFetcher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE1E0A7174421EB00A94C38 /* libGTMHTTPFetcher.a */; };
+		7AE1E0AE1744221800A94C38 /* RDAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0AD1744221800A94C38 /* RDAppController.m */; };
+		7AE1E0AF1744221800A94C38 /* RDAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0AD1744221800A94C38 /* RDAppController.m */; };
+		7AE1E0B21744226700A94C38 /* RDDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0B11744226700A94C38 /* RDDataCache.m */; };
+		7AE1E0B31744226700A94C38 /* RDDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0B11744226700A94C38 /* RDDataCache.m */; };
+		7AE1E0B6174422F600A94C38 /* RDNetworkOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0B5174422F600A94C38 /* RDNetworkOperationManager.m */; };
+		7AE1E0B7174422F600A94C38 /* RDNetworkOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0B5174422F600A94C38 /* RDNetworkOperationManager.m */; };
+		7AE1E0BA17442D7A00A94C38 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0B817442D7A00A94C38 /* Model.xcdatamodeld */; };
+		7AE1E0BB17442D7A00A94C38 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0B817442D7A00A94C38 /* Model.xcdatamodeld */; };
+		7AE1E0C217443E6500A94C38 /* RDCacheEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0C117443E6500A94C38 /* RDCacheEntity.m */; };
+		7AE1E0C317443E6500A94C38 /* RDCacheEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0C117443E6500A94C38 /* RDCacheEntity.m */; };
+		7AE1E0CA17443E6500A94C38 /* RDStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0C917443E6500A94C38 /* RDStation.m */; };
+		7AE1E0CB17443E6500A94C38 /* RDStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0C917443E6500A94C38 /* RDStation.m */; };
+		7AE1E0CE17443E9600A94C38 /* RDTrainStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0CD17443E9600A94C38 /* RDTrainStop.m */; };
+		7AE1E0CF17443E9600A94C38 /* RDTrainStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0CD17443E9600A94C38 /* RDTrainStop.m */; };
+		7AE1E0D217443E9600A94C38 /* RDTrainMovement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0D117443E9600A94C38 /* RDTrainMovement.m */; };
+		7AE1E0D317443E9600A94C38 /* RDTrainMovement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0D117443E9600A94C38 /* RDTrainMovement.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +51,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 7AE1E057174417E700A94C38;
 			remoteInfo = IrishTrains;
+		};
+		7AE1E0A6174421EB00A94C38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AE1E0A1174421EB00A94C38 /* GTMHTTPFetcher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = GTMHTTPFetcherLib;
+		};
+		7AE1E0A8174421EB00A94C38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AE1E0A1174421EB00A94C38 /* GTMHTTPFetcher.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F74D92F11E68BD300F2D927;
+			remoteInfo = UnitTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -50,8 +82,7 @@
 		7AE1E06D174417E800A94C38 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		7AE1E06F174417E800A94C38 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		7AE1E071174417E800A94C38 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		7AE1E074174417E800A94C38 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		7AE1E077174417E800A94C38 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		7AE1E074174417E800A94C38 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		7AE1E079174417E800A94C38 /* RDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDViewController.h; sourceTree = "<group>"; };
 		7AE1E07A174417E800A94C38 /* RDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDViewController.m; sourceTree = "<group>"; };
 		7AE1E081174417E800A94C38 /* IrishTrainsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IrishTrainsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +91,24 @@
 		7AE1E08C174417E800A94C38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7AE1E08E174417E800A94C38 /* IrishTrainsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IrishTrainsTests.h; sourceTree = "<group>"; };
 		7AE1E08F174417E800A94C38 /* IrishTrainsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IrishTrainsTests.m; sourceTree = "<group>"; };
+		7AE1E09C1744197200A94C38 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7AE1E09E1744197800A94C38 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7AE1E0A1174421EB00A94C38 /* GTMHTTPFetcher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTMHTTPFetcher.xcodeproj; path = "third-party/gtm-http-fetcher/Source/GTMHTTPFetcher.xcodeproj"; sourceTree = "<group>"; };
+		7AE1E0AC1744221800A94C38 /* RDAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDAppController.h; sourceTree = "<group>"; };
+		7AE1E0AD1744221800A94C38 /* RDAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDAppController.m; sourceTree = "<group>"; };
+		7AE1E0B01744226700A94C38 /* RDDataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDDataCache.h; sourceTree = "<group>"; };
+		7AE1E0B11744226700A94C38 /* RDDataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDDataCache.m; sourceTree = "<group>"; };
+		7AE1E0B4174422F600A94C38 /* RDNetworkOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDNetworkOperationManager.h; sourceTree = "<group>"; };
+		7AE1E0B5174422F600A94C38 /* RDNetworkOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDNetworkOperationManager.m; sourceTree = "<group>"; };
+		7AE1E0B917442D7A00A94C38 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		7AE1E0C017443E6500A94C38 /* RDCacheEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDCacheEntity.h; sourceTree = "<group>"; };
+		7AE1E0C117443E6500A94C38 /* RDCacheEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDCacheEntity.m; sourceTree = "<group>"; };
+		7AE1E0C817443E6500A94C38 /* RDStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDStation.h; sourceTree = "<group>"; };
+		7AE1E0C917443E6500A94C38 /* RDStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDStation.m; sourceTree = "<group>"; };
+		7AE1E0CC17443E9600A94C38 /* RDTrainStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDTrainStop.h; sourceTree = "<group>"; };
+		7AE1E0CD17443E9600A94C38 /* RDTrainStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDTrainStop.m; sourceTree = "<group>"; };
+		7AE1E0D017443E9600A94C38 /* RDTrainMovement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDTrainMovement.h; sourceTree = "<group>"; };
+		7AE1E0D117443E9600A94C38 /* RDTrainMovement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDTrainMovement.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +116,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AE1E0AA174421F300A94C38 /* libGTMHTTPFetcher.a in Frameworks */,
+				7AE1E09F1744197800A94C38 /* CoreLocation.framework in Frameworks */,
+				7AE1E09D1744197200A94C38 /* CoreData.framework in Frameworks */,
 				7AE1E05C174417E700A94C38 /* UIKit.framework in Frameworks */,
 				7AE1E05E174417E700A94C38 /* Foundation.framework in Frameworks */,
 				7AE1E060174417E700A94C38 /* CoreGraphics.framework in Frameworks */,
@@ -108,6 +160,8 @@
 		7AE1E05A174417E700A94C38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7AE1E09E1744197800A94C38 /* CoreLocation.framework */,
+				7AE1E09C1744197200A94C38 /* CoreData.framework */,
 				7AE1E05B174417E700A94C38 /* UIKit.framework */,
 				7AE1E05D174417E700A94C38 /* Foundation.framework */,
 				7AE1E05F174417E700A94C38 /* CoreGraphics.framework */,
@@ -119,13 +173,16 @@
 		7AE1E061174417E700A94C38 /* IrishTrains */ = {
 			isa = PBXGroup;
 			children = (
+				7AE1E0AB174421FD00A94C38 /* Location Manager */,
+				7AE1E0A0174421DD00A94C38 /* third-party */,
+				7AE1E09B1744194300A94C38 /* Network Operations */,
+				7AE1E09A1744193600A94C38 /* Data Caching */,
 				7AE1E06A174417E800A94C38 /* RDAppDelegate.h */,
 				7AE1E06B174417E800A94C38 /* RDAppDelegate.m */,
-				7AE1E073174417E800A94C38 /* MainStoryboard_iPhone.storyboard */,
-				7AE1E076174417E800A94C38 /* MainStoryboard_iPad.storyboard */,
-				7AE1E079174417E800A94C38 /* RDViewController.h */,
-				7AE1E07A174417E800A94C38 /* RDViewController.m */,
+				7AE1E0991744191A00A94C38 /* UI Classes */,
 				7AE1E062174417E700A94C38 /* Supporting Files */,
+				7AE1E0AC1744221800A94C38 /* RDAppController.h */,
+				7AE1E0AD1744221800A94C38 /* RDAppController.m */,
 			);
 			path = IrishTrains;
 			sourceTree = "<group>";
@@ -161,6 +218,67 @@
 				7AE1E08B174417E800A94C38 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7AE1E0991744191A00A94C38 /* UI Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7AE1E073174417E800A94C38 /* MainStoryboard.storyboard */,
+				7AE1E079174417E800A94C38 /* RDViewController.h */,
+				7AE1E07A174417E800A94C38 /* RDViewController.m */,
+			);
+			name = "UI Classes";
+			sourceTree = "<group>";
+		};
+		7AE1E09A1744193600A94C38 /* Data Caching */ = {
+			isa = PBXGroup;
+			children = (
+				7AE1E0B817442D7A00A94C38 /* Model.xcdatamodeld */,
+				7AE1E0D017443E9600A94C38 /* RDTrainMovement.h */,
+				7AE1E0D117443E9600A94C38 /* RDTrainMovement.m */,
+				7AE1E0CC17443E9600A94C38 /* RDTrainStop.h */,
+				7AE1E0CD17443E9600A94C38 /* RDTrainStop.m */,
+				7AE1E0C017443E6500A94C38 /* RDCacheEntity.h */,
+				7AE1E0C117443E6500A94C38 /* RDCacheEntity.m */,
+				7AE1E0B01744226700A94C38 /* RDDataCache.h */,
+				7AE1E0B11744226700A94C38 /* RDDataCache.m */,
+				7AE1E0C817443E6500A94C38 /* RDStation.h */,
+				7AE1E0C917443E6500A94C38 /* RDStation.m */,
+			);
+			name = "Data Caching";
+			sourceTree = "<group>";
+		};
+		7AE1E09B1744194300A94C38 /* Network Operations */ = {
+			isa = PBXGroup;
+			children = (
+				7AE1E0B4174422F600A94C38 /* RDNetworkOperationManager.h */,
+				7AE1E0B5174422F600A94C38 /* RDNetworkOperationManager.m */,
+			);
+			name = "Network Operations";
+			sourceTree = "<group>";
+		};
+		7AE1E0A0174421DD00A94C38 /* third-party */ = {
+			isa = PBXGroup;
+			children = (
+				7AE1E0A1174421EB00A94C38 /* GTMHTTPFetcher.xcodeproj */,
+			);
+			name = "third-party";
+			sourceTree = "<group>";
+		};
+		7AE1E0A2174421EB00A94C38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AE1E0A7174421EB00A94C38 /* libGTMHTTPFetcher.a */,
+				7AE1E0A9174421EB00A94C38 /* UnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AE1E0AB174421FD00A94C38 /* Location Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Location Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +340,12 @@
 			mainGroup = 7AE1E04F174417E700A94C38;
 			productRefGroup = 7AE1E059174417E700A94C38 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7AE1E0A2174421EB00A94C38 /* Products */;
+					ProjectRef = 7AE1E0A1174421EB00A94C38 /* GTMHTTPFetcher.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7AE1E057174417E700A94C38 /* IrishTrains */,
@@ -229,6 +353,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7AE1E0A7174421EB00A94C38 /* libGTMHTTPFetcher.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGTMHTTPFetcher.a;
+			remoteRef = 7AE1E0A6174421EB00A94C38 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7AE1E0A9174421EB00A94C38 /* UnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.octest;
+			remoteRef = 7AE1E0A8174421EB00A94C38 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7AE1E056174417E700A94C38 /* Resources */ = {
@@ -239,8 +380,7 @@
 				7AE1E06E174417E800A94C38 /* Default.png in Resources */,
 				7AE1E070174417E800A94C38 /* Default@2x.png in Resources */,
 				7AE1E072174417E800A94C38 /* Default-568h@2x.png in Resources */,
-				7AE1E075174417E800A94C38 /* MainStoryboard_iPhone.storyboard in Resources */,
-				7AE1E078174417E800A94C38 /* MainStoryboard_iPad.storyboard in Resources */,
+				7AE1E075174417E800A94C38 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +418,14 @@
 				7AE1E068174417E800A94C38 /* main.m in Sources */,
 				7AE1E06C174417E800A94C38 /* RDAppDelegate.m in Sources */,
 				7AE1E07B174417E800A94C38 /* RDViewController.m in Sources */,
+				7AE1E0AE1744221800A94C38 /* RDAppController.m in Sources */,
+				7AE1E0B21744226700A94C38 /* RDDataCache.m in Sources */,
+				7AE1E0B6174422F600A94C38 /* RDNetworkOperationManager.m in Sources */,
+				7AE1E0BA17442D7A00A94C38 /* Model.xcdatamodeld in Sources */,
+				7AE1E0C217443E6500A94C38 /* RDCacheEntity.m in Sources */,
+				7AE1E0CA17443E6500A94C38 /* RDStation.m in Sources */,
+				7AE1E0CE17443E9600A94C38 /* RDTrainStop.m in Sources */,
+				7AE1E0D217443E9600A94C38 /* RDTrainMovement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +434,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AE1E090174417E800A94C38 /* IrishTrainsTests.m in Sources */,
+				7AE1E0AF1744221800A94C38 /* RDAppController.m in Sources */,
+				7AE1E0B31744226700A94C38 /* RDDataCache.m in Sources */,
+				7AE1E0B7174422F600A94C38 /* RDNetworkOperationManager.m in Sources */,
+				7AE1E0BB17442D7A00A94C38 /* Model.xcdatamodeld in Sources */,
+				7AE1E0C317443E6500A94C38 /* RDCacheEntity.m in Sources */,
+				7AE1E0CB17443E6500A94C38 /* RDStation.m in Sources */,
+				7AE1E0CF17443E9600A94C38 /* RDTrainStop.m in Sources */,
+				7AE1E0D317443E9600A94C38 /* RDTrainMovement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,20 +464,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		7AE1E073174417E800A94C38 /* MainStoryboard_iPhone.storyboard */ = {
+		7AE1E073174417E800A94C38 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7AE1E074174417E800A94C38 /* en */,
 			);
-			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		7AE1E076174417E800A94C38 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7AE1E077174417E800A94C38 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
+			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 		7AE1E08B174417E800A94C38 /* InfoPlist.strings */ = {
@@ -399,6 +547,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IrishTrains/IrishTrains-Prefix.pch";
 				INFOPLIST_FILE = "IrishTrains/IrishTrains-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -410,6 +559,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IrishTrains/IrishTrains-Prefix.pch";
 				INFOPLIST_FILE = "IrishTrains/IrishTrains-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -478,6 +628,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7AE1E0B817442D7A00A94C38 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7AE1E0B917442D7A00A94C38 /* Model.xcdatamodel */,
+			);
+			currentVersion = 7AE1E0B917442D7A00A94C38 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7AE1E050174417E700A94C38 /* Project object */;
 }

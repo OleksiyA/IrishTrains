@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CacheEntity" representedClassName="RDCacheEntity" isAbstract="YES" syncable="YES">
+        <attribute name="dateExpires" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateLastRefreshed" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Station" representedClassName="RDStation" parentEntity="TrainStop" syncable="YES"/>
+    <entity name="TrainMovement" representedClassName="RDTrainMovement" parentEntity="CacheEntity" syncable="YES">
+        <relationship name="stops" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TrainStop" inverseName="movements" inverseEntity="TrainStop" syncable="YES"/>
+    </entity>
+    <entity name="TrainStop" representedClassName="RDTrainStop" parentEntity="CacheEntity" syncable="YES">
+        <relationship name="movements" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TrainMovement" inverseName="stops" inverseEntity="TrainMovement" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Station" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="CacheEntity" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="TrainMovement" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="TrainStop" positionX="160" positionY="192" width="128" height="60"/>
+    </elements>
+</model>

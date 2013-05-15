@@ -7,11 +7,14 @@
 //
 
 #import "RDAppDelegate.h"
+#import "RDAppController.h"
 
 @implementation RDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.appController = [[RDAppController alloc]init];
+    
     // Override point for customization after application launch.
     return YES;
 }
