@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7AE1E05C174417E700A94C38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE1E05B174417E700A94C38 /* UIKit.framework */; };
+		7AE1E05E174417E700A94C38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE1E05D174417E700A94C38 /* Foundation.framework */; };
+		7AE1E060174417E700A94C38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE1E05F174417E700A94C38 /* CoreGraphics.framework */; };
+		7AE1E066174417E700A94C38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AE1E064174417E700A94C38 /* InfoPlist.strings */; };
+		7AE1E068174417E800A94C38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E067174417E800A94C38 /* main.m */; };
+		7AE1E06C174417E800A94C38 /* RDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E06B174417E800A94C38 /* RDAppDelegate.m */; };
+		7AE1E06E174417E800A94C38 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE1E06D174417E800A94C38 /* Default.png */; };
+		7AE1E070174417E800A94C38 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE1E06F174417E800A94C38 /* Default@2x.png */; };
+		7AE1E072174417E800A94C38 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE1E071174417E800A94C38 /* Default-568h@2x.png */; };
+		7AE1E075174417E800A94C38 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE1E073174417E800A94C38 /* MainStoryboard_iPhone.storyboard */; };
+		7AE1E078174417E800A94C38 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE1E076174417E800A94C38 /* MainStoryboard_iPad.storyboard */; };
+		7AE1E07B174417E800A94C38 /* RDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E07A174417E800A94C38 /* RDViewController.m */; };
+		7AE1E083174417E800A94C38 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE1E082174417E800A94C38 /* SenTestingKit.framework */; };
+		7AE1E084174417E800A94C38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE1E05B174417E700A94C38 /* UIKit.framework */; };
+		7AE1E085174417E800A94C38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE1E05D174417E700A94C38 /* Foundation.framework */; };
+		7AE1E08D174417E800A94C38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AE1E08B174417E800A94C38 /* InfoPlist.strings */; };
+		7AE1E090174417E800A94C38 /* IrishTrainsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E08F174417E800A94C38 /* IrishTrainsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7AE1E086174417E800A94C38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AE1E050174417E700A94C38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AE1E057174417E700A94C38;
+			remoteInfo = IrishTrains;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7AE1E058174417E700A94C38 /* IrishTrains.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrishTrains.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE1E05B174417E700A94C38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7AE1E05D174417E700A94C38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7AE1E05F174417E700A94C38 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7AE1E063174417E700A94C38 /* IrishTrains-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IrishTrains-Info.plist"; sourceTree = "<group>"; };
+		7AE1E065174417E700A94C38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7AE1E067174417E800A94C38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7AE1E069174417E800A94C38 /* IrishTrains-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IrishTrains-Prefix.pch"; sourceTree = "<group>"; };
+		7AE1E06A174417E800A94C38 /* RDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDAppDelegate.h; sourceTree = "<group>"; };
+		7AE1E06B174417E800A94C38 /* RDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDAppDelegate.m; sourceTree = "<group>"; };
+		7AE1E06D174417E800A94C38 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7AE1E06F174417E800A94C38 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7AE1E071174417E800A94C38 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7AE1E074174417E800A94C38 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		7AE1E077174417E800A94C38 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		7AE1E079174417E800A94C38 /* RDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDViewController.h; sourceTree = "<group>"; };
+		7AE1E07A174417E800A94C38 /* RDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDViewController.m; sourceTree = "<group>"; };
+		7AE1E081174417E800A94C38 /* IrishTrainsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IrishTrainsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AE1E082174417E800A94C38 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7AE1E08A174417E800A94C38 /* IrishTrainsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IrishTrainsTests-Info.plist"; sourceTree = "<group>"; };
+		7AE1E08C174417E800A94C38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7AE1E08E174417E800A94C38 /* IrishTrainsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IrishTrainsTests.h; sourceTree = "<group>"; };
+		7AE1E08F174417E800A94C38 /* IrishTrainsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IrishTrainsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7AE1E055174417E700A94C38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE1E05C174417E700A94C38 /* UIKit.framework in Frameworks */,
+				7AE1E05E174417E700A94C38 /* Foundation.framework in Frameworks */,
+				7AE1E060174417E700A94C38 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE1E07D174417E800A94C38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE1E083174417E800A94C38 /* SenTestingKit.framework in Frameworks */,
+				7AE1E084174417E800A94C38 /* UIKit.framework in Frameworks */,
+				7AE1E085174417E800A94C38 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7AE1E04F174417E700A94C38 = {
+			isa = PBXGroup;
+			children = (
+				7AE1E061174417E700A94C38 /* IrishTrains */,
+				7AE1E088174417E800A94C38 /* IrishTrainsTests */,
+				7AE1E05A174417E700A94C38 /* Frameworks */,
+				7AE1E059174417E700A94C38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7AE1E059174417E700A94C38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AE1E058174417E700A94C38 /* IrishTrains.app */,
+				7AE1E081174417E800A94C38 /* IrishTrainsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AE1E05A174417E700A94C38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AE1E05B174417E700A94C38 /* UIKit.framework */,
+				7AE1E05D174417E700A94C38 /* Foundation.framework */,
+				7AE1E05F174417E700A94C38 /* CoreGraphics.framework */,
+				7AE1E082174417E800A94C38 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AE1E061174417E700A94C38 /* IrishTrains */ = {
+			isa = PBXGroup;
+			children = (
+				7AE1E06A174417E800A94C38 /* RDAppDelegate.h */,
+				7AE1E06B174417E800A94C38 /* RDAppDelegate.m */,
+				7AE1E073174417E800A94C38 /* MainStoryboard_iPhone.storyboard */,
+				7AE1E076174417E800A94C38 /* MainStoryboard_iPad.storyboard */,
+				7AE1E079174417E800A94C38 /* RDViewController.h */,
+				7AE1E07A174417E800A94C38 /* RDViewController.m */,
+				7AE1E062174417E700A94C38 /* Supporting Files */,
+			);
+			path = IrishTrains;
+			sourceTree = "<group>";
+		};
+		7AE1E062174417E700A94C38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AE1E063174417E700A94C38 /* IrishTrains-Info.plist */,
+				7AE1E064174417E700A94C38 /* InfoPlist.strings */,
+				7AE1E067174417E800A94C38 /* main.m */,
+				7AE1E069174417E800A94C38 /* IrishTrains-Prefix.pch */,
+				7AE1E06D174417E800A94C38 /* Default.png */,
+				7AE1E06F174417E800A94C38 /* Default@2x.png */,
+				7AE1E071174417E800A94C38 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7AE1E088174417E800A94C38 /* IrishTrainsTests */ = {
+			isa = PBXGroup;
+			children = (
+				7AE1E08E174417E800A94C38 /* IrishTrainsTests.h */,
+				7AE1E08F174417E800A94C38 /* IrishTrainsTests.m */,
+				7AE1E089174417E800A94C38 /* Supporting Files */,
+			);
+			path = IrishTrainsTests;
+			sourceTree = "<group>";
+		};
+		7AE1E089174417E800A94C38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AE1E08A174417E800A94C38 /* IrishTrainsTests-Info.plist */,
+				7AE1E08B174417E800A94C38 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7AE1E057174417E700A94C38 /* IrishTrains */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AE1E093174417E800A94C38 /* Build configuration list for PBXNativeTarget "IrishTrains" */;
+			buildPhases = (
+				7AE1E054174417E700A94C38 /* Sources */,
+				7AE1E055174417E700A94C38 /* Frameworks */,
+				7AE1E056174417E700A94C38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IrishTrains;
+			productName = IrishTrains;
+			productReference = 7AE1E058174417E700A94C38 /* IrishTrains.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7AE1E080174417E800A94C38 /* IrishTrainsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AE1E096174417E800A94C38 /* Build configuration list for PBXNativeTarget "IrishTrainsTests" */;
+			buildPhases = (
+				7AE1E07C174417E800A94C38 /* Sources */,
+				7AE1E07D174417E800A94C38 /* Frameworks */,
+				7AE1E07E174417E800A94C38 /* Resources */,
+				7AE1E07F174417E800A94C38 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AE1E087174417E800A94C38 /* PBXTargetDependency */,
+			);
+			name = IrishTrainsTests;
+			productName = IrishTrainsTests;
+			productReference = 7AE1E081174417E800A94C38 /* IrishTrainsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7AE1E050174417E700A94C38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RD;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Oleksiy Ivanov";
+			};
+			buildConfigurationList = 7AE1E053174417E700A94C38 /* Build configuration list for PBXProject "IrishTrains" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7AE1E04F174417E700A94C38;
+			productRefGroup = 7AE1E059174417E700A94C38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AE1E057174417E700A94C38 /* IrishTrains */,
+				7AE1E080174417E800A94C38 /* IrishTrainsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7AE1E056174417E700A94C38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE1E066174417E700A94C38 /* InfoPlist.strings in Resources */,
+				7AE1E06E174417E800A94C38 /* Default.png in Resources */,
+				7AE1E070174417E800A94C38 /* Default@2x.png in Resources */,
+				7AE1E072174417E800A94C38 /* Default-568h@2x.png in Resources */,
+				7AE1E075174417E800A94C38 /* MainStoryboard_iPhone.storyboard in Resources */,
+				7AE1E078174417E800A94C38 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE1E07E174417E800A94C38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE1E08D174417E800A94C38 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7AE1E07F174417E800A94C38 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7AE1E054174417E700A94C38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE1E068174417E800A94C38 /* main.m in Sources */,
+				7AE1E06C174417E800A94C38 /* RDAppDelegate.m in Sources */,
+				7AE1E07B174417E800A94C38 /* RDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE1E07C174417E800A94C38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AE1E090174417E800A94C38 /* IrishTrainsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7AE1E087174417E800A94C38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AE1E057174417E700A94C38 /* IrishTrains */;
+			targetProxy = 7AE1E086174417E800A94C38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7AE1E064174417E700A94C38 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AE1E065174417E700A94C38 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7AE1E073174417E800A94C38 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AE1E074174417E800A94C38 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		7AE1E076174417E800A94C38 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AE1E077174417E800A94C38 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		7AE1E08B174417E800A94C38 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AE1E08C174417E800A94C38 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7AE1E091174417E800A94C38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7AE1E092174417E800A94C38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AE1E094174417E800A94C38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IrishTrains/IrishTrains-Prefix.pch";
+				INFOPLIST_FILE = "IrishTrains/IrishTrains-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7AE1E095174417E800A94C38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IrishTrains/IrishTrains-Prefix.pch";
+				INFOPLIST_FILE = "IrishTrains/IrishTrains-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7AE1E097174417E800A94C38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IrishTrains.app/IrishTrains";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IrishTrains/IrishTrains-Prefix.pch";
+				INFOPLIST_FILE = "IrishTrainsTests/IrishTrainsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7AE1E098174417E800A94C38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IrishTrains.app/IrishTrains";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IrishTrains/IrishTrains-Prefix.pch";
+				INFOPLIST_FILE = "IrishTrainsTests/IrishTrainsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7AE1E053174417E700A94C38 /* Build configuration list for PBXProject "IrishTrains" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AE1E091174417E800A94C38 /* Debug */,
+				7AE1E092174417E800A94C38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AE1E093174417E800A94C38 /* Build configuration list for PBXNativeTarget "IrishTrains" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AE1E094174417E800A94C38 /* Debug */,
+				7AE1E095174417E800A94C38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7AE1E096174417E800A94C38 /* Build configuration list for PBXNativeTarget "IrishTrainsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AE1E097174417E800A94C38 /* Debug */,
+				7AE1E098174417E800A94C38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7AE1E050174417E700A94C38 /* Project object */;
+}
