@@ -34,14 +34,20 @@
 		7AE1E0B7174422F600A94C38 /* RDNetworkOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0B5174422F600A94C38 /* RDNetworkOperationManager.m */; };
 		7AE1E0BA17442D7A00A94C38 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0B817442D7A00A94C38 /* Model.xcdatamodeld */; };
 		7AE1E0BB17442D7A00A94C38 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0B817442D7A00A94C38 /* Model.xcdatamodeld */; };
-		7AE1E0C217443E6500A94C38 /* RDCacheEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0C117443E6500A94C38 /* RDCacheEntity.m */; };
-		7AE1E0C317443E6500A94C38 /* RDCacheEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0C117443E6500A94C38 /* RDCacheEntity.m */; };
-		7AE1E0CA17443E6500A94C38 /* RDStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0C917443E6500A94C38 /* RDStation.m */; };
-		7AE1E0CB17443E6500A94C38 /* RDStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0C917443E6500A94C38 /* RDStation.m */; };
-		7AE1E0CE17443E9600A94C38 /* RDTrainStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0CD17443E9600A94C38 /* RDTrainStop.m */; };
-		7AE1E0CF17443E9600A94C38 /* RDTrainStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0CD17443E9600A94C38 /* RDTrainStop.m */; };
-		7AE1E0D217443E9600A94C38 /* RDTrainMovement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0D117443E9600A94C38 /* RDTrainMovement.m */; };
-		7AE1E0D317443E9600A94C38 /* RDTrainMovement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0D117443E9600A94C38 /* RDTrainMovement.m */; };
+		7AF6A57C174588A300030C16 /* RDStationDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6A57B174588A300030C16 /* RDStationDetailsViewController.m */; };
+		7AF6A57D174588A300030C16 /* RDStationDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6A57B174588A300030C16 /* RDStationDetailsViewController.m */; };
+		7AF6A58217458E6E00030C16 /* RDStationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6A58117458E6E00030C16 /* RDStationCell.m */; };
+		7AF6A58317458E6E00030C16 /* RDStationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6A58117458E6E00030C16 /* RDStationCell.m */; };
+		7AF6A58617458FEE00030C16 /* RDStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6A58517458FEE00030C16 /* RDStation.m */; };
+		7AF6A58717458FEE00030C16 /* RDStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6A58517458FEE00030C16 /* RDStation.m */; };
+		7AF6A58A17458FEE00030C16 /* RDTrainMovement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6A58917458FEE00030C16 /* RDTrainMovement.m */; };
+		7AF6A58B17458FEE00030C16 /* RDTrainMovement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6A58917458FEE00030C16 /* RDTrainMovement.m */; };
+		7AF6A58E17458FEE00030C16 /* RDTrainStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6A58D17458FEE00030C16 /* RDTrainStop.m */; };
+		7AF6A58F17458FEE00030C16 /* RDTrainStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6A58D17458FEE00030C16 /* RDTrainStop.m */; };
+		7AF6A59217458FEE00030C16 /* RDCacheEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6A59117458FEE00030C16 /* RDCacheEntity.m */; };
+		7AF6A59317458FEE00030C16 /* RDCacheEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6A59117458FEE00030C16 /* RDCacheEntity.m */; };
+		7AF6A59617459BD100030C16 /* RDXmlParserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6A59517459BD100030C16 /* RDXmlParserHelper.m */; };
+		7AF6A59717459BD100030C16 /* RDXmlParserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6A59517459BD100030C16 /* RDXmlParserHelper.m */; };
 		D2E070CE1745289500AF83A0 /* RDLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E070CD1745289500AF83A0 /* RDLocationManager.m */; };
 /* End PBXBuildFile section */
 
@@ -102,14 +108,20 @@
 		7AE1E0B4174422F600A94C38 /* RDNetworkOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDNetworkOperationManager.h; sourceTree = "<group>"; };
 		7AE1E0B5174422F600A94C38 /* RDNetworkOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDNetworkOperationManager.m; sourceTree = "<group>"; };
 		7AE1E0B917442D7A00A94C38 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		7AE1E0C017443E6500A94C38 /* RDCacheEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDCacheEntity.h; sourceTree = "<group>"; };
-		7AE1E0C117443E6500A94C38 /* RDCacheEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDCacheEntity.m; sourceTree = "<group>"; };
-		7AE1E0C817443E6500A94C38 /* RDStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDStation.h; sourceTree = "<group>"; };
-		7AE1E0C917443E6500A94C38 /* RDStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDStation.m; sourceTree = "<group>"; };
-		7AE1E0CC17443E9600A94C38 /* RDTrainStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDTrainStop.h; sourceTree = "<group>"; };
-		7AE1E0CD17443E9600A94C38 /* RDTrainStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDTrainStop.m; sourceTree = "<group>"; };
-		7AE1E0D017443E9600A94C38 /* RDTrainMovement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDTrainMovement.h; sourceTree = "<group>"; };
-		7AE1E0D117443E9600A94C38 /* RDTrainMovement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDTrainMovement.m; sourceTree = "<group>"; };
+		7AF6A57A174588A300030C16 /* RDStationDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDStationDetailsViewController.h; sourceTree = "<group>"; };
+		7AF6A57B174588A300030C16 /* RDStationDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDStationDetailsViewController.m; sourceTree = "<group>"; };
+		7AF6A58017458E6E00030C16 /* RDStationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDStationCell.h; sourceTree = "<group>"; };
+		7AF6A58117458E6E00030C16 /* RDStationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDStationCell.m; sourceTree = "<group>"; };
+		7AF6A58417458FEE00030C16 /* RDStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDStation.h; sourceTree = "<group>"; };
+		7AF6A58517458FEE00030C16 /* RDStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDStation.m; sourceTree = "<group>"; };
+		7AF6A58817458FEE00030C16 /* RDTrainMovement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDTrainMovement.h; sourceTree = "<group>"; };
+		7AF6A58917458FEE00030C16 /* RDTrainMovement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDTrainMovement.m; sourceTree = "<group>"; };
+		7AF6A58C17458FEE00030C16 /* RDTrainStop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDTrainStop.h; sourceTree = "<group>"; };
+		7AF6A58D17458FEE00030C16 /* RDTrainStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDTrainStop.m; sourceTree = "<group>"; };
+		7AF6A59017458FEE00030C16 /* RDCacheEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDCacheEntity.h; sourceTree = "<group>"; };
+		7AF6A59117458FEE00030C16 /* RDCacheEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDCacheEntity.m; sourceTree = "<group>"; };
+		7AF6A59417459BD100030C16 /* RDXmlParserHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDXmlParserHelper.h; sourceTree = "<group>"; };
+		7AF6A59517459BD100030C16 /* RDXmlParserHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDXmlParserHelper.m; sourceTree = "<group>"; };
 		D2E070CC1745289500AF83A0 /* RDLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLocationManager.h; sourceTree = "<group>"; };
 		D2E070CD1745289500AF83A0 /* RDLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLocationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -227,6 +239,10 @@
 			isa = PBXGroup;
 			children = (
 				7AE1E073174417E800A94C38 /* MainStoryboard.storyboard */,
+				7AF6A58017458E6E00030C16 /* RDStationCell.h */,
+				7AF6A58117458E6E00030C16 /* RDStationCell.m */,
+				7AF6A57A174588A300030C16 /* RDStationDetailsViewController.h */,
+				7AF6A57B174588A300030C16 /* RDStationDetailsViewController.m */,
 				7AE1E079174417E800A94C38 /* RDViewController.h */,
 				7AE1E07A174417E800A94C38 /* RDViewController.m */,
 			);
@@ -237,16 +253,16 @@
 			isa = PBXGroup;
 			children = (
 				7AE1E0B817442D7A00A94C38 /* Model.xcdatamodeld */,
-				7AE1E0D017443E9600A94C38 /* RDTrainMovement.h */,
-				7AE1E0D117443E9600A94C38 /* RDTrainMovement.m */,
-				7AE1E0CC17443E9600A94C38 /* RDTrainStop.h */,
-				7AE1E0CD17443E9600A94C38 /* RDTrainStop.m */,
-				7AE1E0C017443E6500A94C38 /* RDCacheEntity.h */,
-				7AE1E0C117443E6500A94C38 /* RDCacheEntity.m */,
+				7AF6A59017458FEE00030C16 /* RDCacheEntity.h */,
+				7AF6A59117458FEE00030C16 /* RDCacheEntity.m */,
+				7AF6A58C17458FEE00030C16 /* RDTrainStop.h */,
+				7AF6A58D17458FEE00030C16 /* RDTrainStop.m */,
+				7AF6A58817458FEE00030C16 /* RDTrainMovement.h */,
+				7AF6A58917458FEE00030C16 /* RDTrainMovement.m */,
+				7AF6A58417458FEE00030C16 /* RDStation.h */,
+				7AF6A58517458FEE00030C16 /* RDStation.m */,
 				7AE1E0B01744226700A94C38 /* RDDataCache.h */,
 				7AE1E0B11744226700A94C38 /* RDDataCache.m */,
-				7AE1E0C817443E6500A94C38 /* RDStation.h */,
-				7AE1E0C917443E6500A94C38 /* RDStation.m */,
 			);
 			name = "Data Caching";
 			sourceTree = "<group>";
@@ -256,6 +272,8 @@
 			children = (
 				7AE1E0B4174422F600A94C38 /* RDNetworkOperationManager.h */,
 				7AE1E0B5174422F600A94C38 /* RDNetworkOperationManager.m */,
+				7AF6A59417459BD100030C16 /* RDXmlParserHelper.h */,
+				7AF6A59517459BD100030C16 /* RDXmlParserHelper.m */,
 			);
 			name = "Network Operations";
 			sourceTree = "<group>";
@@ -427,11 +445,14 @@
 				7AE1E0B21744226700A94C38 /* RDDataCache.m in Sources */,
 				7AE1E0B6174422F600A94C38 /* RDNetworkOperationManager.m in Sources */,
 				7AE1E0BA17442D7A00A94C38 /* Model.xcdatamodeld in Sources */,
-				7AE1E0C217443E6500A94C38 /* RDCacheEntity.m in Sources */,
-				7AE1E0CA17443E6500A94C38 /* RDStation.m in Sources */,
-				7AE1E0CE17443E9600A94C38 /* RDTrainStop.m in Sources */,
-				7AE1E0D217443E9600A94C38 /* RDTrainMovement.m in Sources */,
 				D2E070CE1745289500AF83A0 /* RDLocationManager.m in Sources */,
+				7AF6A57C174588A300030C16 /* RDStationDetailsViewController.m in Sources */,
+				7AF6A58217458E6E00030C16 /* RDStationCell.m in Sources */,
+				7AF6A58617458FEE00030C16 /* RDStation.m in Sources */,
+				7AF6A58A17458FEE00030C16 /* RDTrainMovement.m in Sources */,
+				7AF6A58E17458FEE00030C16 /* RDTrainStop.m in Sources */,
+				7AF6A59217458FEE00030C16 /* RDCacheEntity.m in Sources */,
+				7AF6A59617459BD100030C16 /* RDXmlParserHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,10 +465,13 @@
 				7AE1E0B31744226700A94C38 /* RDDataCache.m in Sources */,
 				7AE1E0B7174422F600A94C38 /* RDNetworkOperationManager.m in Sources */,
 				7AE1E0BB17442D7A00A94C38 /* Model.xcdatamodeld in Sources */,
-				7AE1E0C317443E6500A94C38 /* RDCacheEntity.m in Sources */,
-				7AE1E0CB17443E6500A94C38 /* RDStation.m in Sources */,
-				7AE1E0CF17443E9600A94C38 /* RDTrainStop.m in Sources */,
-				7AE1E0D317443E9600A94C38 /* RDTrainMovement.m in Sources */,
+				7AF6A57D174588A300030C16 /* RDStationDetailsViewController.m in Sources */,
+				7AF6A58317458E6E00030C16 /* RDStationCell.m in Sources */,
+				7AF6A58717458FEE00030C16 /* RDStation.m in Sources */,
+				7AF6A58B17458FEE00030C16 /* RDTrainMovement.m in Sources */,
+				7AF6A58F17458FEE00030C16 /* RDTrainStop.m in Sources */,
+				7AF6A59317458FEE00030C16 /* RDCacheEntity.m in Sources */,
+				7AF6A59717459BD100030C16 /* RDXmlParserHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +576,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IrishTrains/IrishTrains-Prefix.pch";
+				HEADER_SEARCH_PATHS = "IrishTrains/third-party/gtm-http-fetcher/Source";
 				INFOPLIST_FILE = "IrishTrains/IrishTrains-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -564,6 +589,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IrishTrains/IrishTrains-Prefix.pch";
+				HEADER_SEARCH_PATHS = "IrishTrains/third-party/gtm-http-fetcher/Source";
 				INFOPLIST_FILE = "IrishTrains/IrishTrains-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";

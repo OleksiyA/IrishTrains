@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class RDStation;
+
 @interface RDDataCache : NSObject
+
+-(NSArray*)listOfStations;
+-(RDStation*)addStationWithInfo:(NSDictionary*)stationInfo;
 
 @end

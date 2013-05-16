@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface RDViewController : UIViewController
+@interface RDViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UILabel *myLocationTextLabel;
+@property (weak, nonatomic) IBOutlet UITableView *tableViewStations;
+
+@property (strong)NSArray*                  stations;
+@property (strong)CLLocation*               latestLocation;
+
+- (IBAction)onRefreshTouched:(id)sender;
 
 @end

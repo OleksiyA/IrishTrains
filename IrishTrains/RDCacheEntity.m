@@ -2,7 +2,7 @@
 //  RDCacheEntity.m
 //  IrishTrains
 //
-//  Created by Oleksiy Ivanov on 5/16/13.
+//  Created by Oleksiy Ivanov on 5/17/13.
 //  Copyright (c) 2013 Oleksiy Ivanov. All rights reserved.
 //
 
@@ -12,7 +12,6 @@
 @implementation RDCacheEntity
 
 @dynamic dateLastRefreshed;
-@dynamic dateExpires;
-@dynamic identifier;
+@dynamic expiresInSeconds;
 
 @end

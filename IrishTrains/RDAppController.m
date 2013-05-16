@@ -29,6 +29,20 @@
 }
 
 #pragma mark Public interface
+-(void)requestUpdatedUserLocation
+{
+    [self.locationManager requestLocationWithMaxAcquisitionTime:30 withPrecisionBetterThan:1000 withCompletionBlock:^(CLLocation *location, NSString *errorDescription) {
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"LocationUpdated" object:location];
+        });
+        
+    }];
+}
 
+-(NSArray*)listOfStations
+{
+    return [self.dataCache listOfStations];
+}
 
 @end

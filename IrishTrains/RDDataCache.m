@@ -10,4 +10,19 @@
 
 @implementation RDDataCache
 
+#pragma mark Internal interface
+
+#pragma mark Allocation and Deallocation
+
+#pragma mark Public interface
+-(NSArray*)listOfStations
+{
+    return nil;
+}
+
+-(RDStation*)addStationWithInfo:(NSDictionary*)stationInfo
+{
+    return nil;
+}
+
 @end

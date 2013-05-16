@@ -18,4 +18,7 @@
 @property(strong)RDNetworkOperationManager*     networkManager;
 @property(strong)RDLocationManager*             locationManager;
 
+-(void)requestUpdatedUserLocation;
+-(NSArray*)listOfStations;
+
 @end

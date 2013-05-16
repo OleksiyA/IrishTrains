@@ -2,7 +2,7 @@
 //  RDTrainMovement.h
 //  IrishTrains
 //
-//  Created by Oleksiy Ivanov on 5/16/13.
+//  Created by Oleksiy Ivanov on 5/17/13.
 //  Copyright (c) 2013 Oleksiy Ivanov. All rights reserved.
 //
 
@@ -14,6 +14,10 @@
 
 @interface RDTrainMovement : RDCacheEntity
 
+@property (nonatomic, retain) NSString * trainCode;
+@property (nonatomic, retain) NSDate * trainDate;
+@property (nonatomic, retain) NSString * trainDestination;
+@property (nonatomic, retain) NSString * trainOrigin;
 @property (nonatomic, retain) NSSet *stops;
 @end
 
