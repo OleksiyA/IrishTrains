@@ -10,12 +10,10 @@
 
 @class RDDataCache;
 @class RDNetworkOperationManager;
-@class RDLocationManager;
 
 @interface RDAppController : NSObject
 
 @property(strong)RDDataCache*                   dataCache;
 @property(strong)RDNetworkOperationManager*     networkManager;
-@property(strong)RDLocationManager*             locationManager;
 
 @end

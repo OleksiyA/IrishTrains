@@ -42,7 +42,6 @@
 		7AE1E0CF17443E9600A94C38 /* RDTrainStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0CD17443E9600A94C38 /* RDTrainStop.m */; };
 		7AE1E0D217443E9600A94C38 /* RDTrainMovement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0D117443E9600A94C38 /* RDTrainMovement.m */; };
 		7AE1E0D317443E9600A94C38 /* RDTrainMovement.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1E0D117443E9600A94C38 /* RDTrainMovement.m */; };
-		D2E070CE1745289500AF83A0 /* RDLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E070CD1745289500AF83A0 /* RDLocationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,8 +109,6 @@
 		7AE1E0CD17443E9600A94C38 /* RDTrainStop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDTrainStop.m; sourceTree = "<group>"; };
 		7AE1E0D017443E9600A94C38 /* RDTrainMovement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDTrainMovement.h; sourceTree = "<group>"; };
 		7AE1E0D117443E9600A94C38 /* RDTrainMovement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDTrainMovement.m; sourceTree = "<group>"; };
-		D2E070CC1745289500AF83A0 /* RDLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLocationManager.h; sourceTree = "<group>"; };
-		D2E070CD1745289500AF83A0 /* RDLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLocationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,16 +173,16 @@
 		7AE1E061174417E700A94C38 /* IrishTrains */ = {
 			isa = PBXGroup;
 			children = (
-				7AE1E09A1744193600A94C38 /* Data Caching */,
 				7AE1E0AB174421FD00A94C38 /* Location Manager */,
+				7AE1E0A0174421DD00A94C38 /* third-party */,
 				7AE1E09B1744194300A94C38 /* Network Operations */,
-				7AE1E0AC1744221800A94C38 /* RDAppController.h */,
-				7AE1E0AD1744221800A94C38 /* RDAppController.m */,
+				7AE1E09A1744193600A94C38 /* Data Caching */,
 				7AE1E06A174417E800A94C38 /* RDAppDelegate.h */,
 				7AE1E06B174417E800A94C38 /* RDAppDelegate.m */,
-				7AE1E062174417E700A94C38 /* Supporting Files */,
-				7AE1E0A0174421DD00A94C38 /* third-party */,
 				7AE1E0991744191A00A94C38 /* UI Classes */,
+				7AE1E062174417E700A94C38 /* Supporting Files */,
+				7AE1E0AC1744221800A94C38 /* RDAppController.h */,
+				7AE1E0AD1744221800A94C38 /* RDAppController.m */,
 			);
 			path = IrishTrains;
 			sourceTree = "<group>";
@@ -280,8 +277,6 @@
 		7AE1E0AB174421FD00A94C38 /* Location Manager */ = {
 			isa = PBXGroup;
 			children = (
-				D2E070CC1745289500AF83A0 /* RDLocationManager.h */,
-				D2E070CD1745289500AF83A0 /* RDLocationManager.m */,
 			);
 			name = "Location Manager";
 			sourceTree = "<group>";
@@ -431,7 +426,6 @@
 				7AE1E0CA17443E6500A94C38 /* RDStation.m in Sources */,
 				7AE1E0CE17443E9600A94C38 /* RDTrainStop.m in Sources */,
 				7AE1E0D217443E9600A94C38 /* RDTrainMovement.m in Sources */,
-				D2E070CE1745289500AF83A0 /* RDLocationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,7 +618,6 @@
 				7AE1E095174417E800A94C38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		7AE1E096174417E800A94C38 /* Build configuration list for PBXNativeTarget "IrishTrainsTests" */ = {
 			isa = XCConfigurationList;
@@ -633,7 +626,6 @@
 				7AE1E098174417E800A94C38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
