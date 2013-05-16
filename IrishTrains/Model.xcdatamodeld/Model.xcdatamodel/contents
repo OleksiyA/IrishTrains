@@ -1,21 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="CacheEntity" representedClassName="RDCacheEntity" isAbstract="YES" syncable="YES">
-        <attribute name="dateExpires" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="dateLastRefreshed" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expiresInSeconds" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
     </entity>
-    <entity name="Station" representedClassName="RDStation" parentEntity="TrainStop" syncable="YES"/>
+    <entity name="Station" representedClassName="RDStation" parentEntity="CacheEntity" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="staionCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stationAlias" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stationDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stationId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="TrainMovement" representedClassName="RDTrainMovement" parentEntity="CacheEntity" syncable="YES">
+        <attribute name="trainCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trainDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="trainDestination" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trainOrigin" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="stops" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TrainStop" inverseName="movements" inverseEntity="TrainStop" syncable="YES"/>
     </entity>
     <entity name="TrainStop" representedClassName="RDTrainStop" parentEntity="CacheEntity" syncable="YES">
-        <relationship name="movements" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TrainMovement" inverseName="stops" inverseEntity="TrainMovement" syncable="YES"/>
+        <attribute name="arrivalActual" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="autoArrival" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="autoDepart" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="departureActual" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="locationCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationFullName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationOrder" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locationType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scheduledArrival" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="scheduledDeparture" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="stopType" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="movements" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TrainMovement" inverseName="stops" inverseEntity="TrainMovement" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Station" positionX="160" positionY="192" width="128" height="45"/>
-        <element name="CacheEntity" positionX="160" positionY="192" width="128" height="90"/>
-        <element name="TrainMovement" positionX="160" positionY="192" width="128" height="60"/>
-        <element name="TrainStop" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="Station" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="CacheEntity" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="TrainMovement" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="TrainStop" positionX="160" positionY="192" width="128" height="225"/>
     </elements>
 </model>
