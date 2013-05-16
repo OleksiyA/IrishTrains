@@ -9,6 +9,7 @@
 #import "RDAppController.h"
 #import "RDDataCache.h"
 #import "RDNetworkOperationManager.h"
+#import "RDLocationManager.h"
 
 @implementation RDAppController
 
@@ -22,6 +23,7 @@
     
     self.dataCache = [[RDDataCache alloc]init];
     self.networkManager = [[RDNetworkOperationManager alloc]init];
+    self.locationManager = [[RDLocationManager alloc]init];
     
     return self;
 }
