@@ -13,7 +13,12 @@
 
 @interface RDDataCache : NSObject
 
+@property(strong)NSManagedObjectContext*        managedContext;
+@property(strong)NSPersistentStoreCoordinator*  storeCoordinator;
+@property(strong)NSManagedObjectModel*          model;
+
 -(NSArray*)listOfStations;
 -(RDStation*)addStationWithInfo:(NSDictionary*)stationInfo;
+-(RDStation*)stationWithId:(NSString*)stationId;
 
 @end

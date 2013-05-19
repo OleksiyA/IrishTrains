@@ -10,7 +10,8 @@
 
 @interface RDNetworkOperationManager : NSObject
 
--(void)downloadDescriptionsForAllStationsWithCompletionBlock:(void(^)(NSArray* stationsDescriptions, BOOL completed))block;
+-(void)downloadDescriptionsForAllStationsWithCompletionBlock:(void(^)(BOOL completed, NSError* error))block withStationDownloadedBlock:(void(^)(NSDictionary* stationDescription))blockStationReady;
 -(void)downloadTrainMovementInfoForTrainWithId:(NSString*)trainId withCompletionBlock:(void(^)(NSDictionary* trainMovementDescription, BOOL completed))block;
+-(void)downloadStationUsageForStation:(NSString*)station withCompletionBlock:(void(^)(NSArray* stationUsageDescriptions, BOOL completed))block;
 
 @end

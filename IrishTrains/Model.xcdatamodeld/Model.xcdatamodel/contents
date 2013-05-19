@@ -34,8 +34,8 @@
         <relationship name="movements" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TrainMovement" inverseName="stops" inverseEntity="TrainMovement" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Station" positionX="160" positionY="192" width="128" height="135"/>
         <element name="CacheEntity" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Station" positionX="160" positionY="192" width="128" height="135"/>
         <element name="TrainMovement" positionX="160" positionY="192" width="128" height="120"/>
         <element name="TrainStop" positionX="160" positionY="192" width="128" height="225"/>
     </elements>

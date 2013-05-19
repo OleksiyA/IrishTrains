@@ -18,6 +18,49 @@
 }
 
 #pragma mark NSXMLParserDelegate methods
-//NSXMLParserDelegate
+- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qualifiedName attributes:(NSDictionary *)attributeDict
+{
+    if(!self.tmpDictionary)
+    {
+        if(self.blockElementStarted(elementName))
+        {
+            self.currentRootElementName = elementName;
+            self.tmpDictionary = [[NSMutableDictionary alloc]init];
+        }
+    }
+    else
+    {
+        self.currentElementName = elementName;
+    }
+}
+
+- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
+{
+    if([elementName isEqualToString:self.currentRootElementName])
+    {
+        self.blockElementParsed(self.tmpDictionary);
+        self.tmpDictionary = nil;
+        self.currentRootElementName = nil;
+        self.currentElementName = nil;
+    }
+    else
+    {
+        self.currentElementName = nil;
+    }
+}
+
+- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string
+{
+    if(self.tmpDictionary)
+    {
+        if([string length])
+        {
+            if(self.currentElementName)
+            {
+                [self.tmpDictionary setObject:string forKey:self.currentElementName];
+            }
+        }
+    }
+}
 
 @end

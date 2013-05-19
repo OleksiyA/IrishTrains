@@ -10,6 +10,12 @@
 
 @interface RDXmlParserHelper : NSObject<NSXMLParserDelegate>
 
+@property(strong) void(^blockElementParsed)(NSDictionary* elementDescription);
+@property(strong) BOOL(^blockElementStarted)(NSString* elementName);
+@property(strong)NSMutableDictionary*       tmpDictionary;
+@property(strong)NSString*                  currentRootElementName;
+@property(strong)NSString*                  currentElementName;
+
 -(id)parsedResult;
 
 @end

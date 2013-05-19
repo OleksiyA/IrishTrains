@@ -10,11 +10,13 @@
 
 @class RDStation;
 
-@interface RDStationDetailsViewController : UIViewController
+@interface RDStationDetailsViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *informationTextLabel;
 
 
 @property(strong)RDStation*         station;
-
+@property(strong)NSArray*           stationUsage;
 
 @end

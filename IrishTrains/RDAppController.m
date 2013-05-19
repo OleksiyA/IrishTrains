@@ -14,7 +14,16 @@
 @implementation RDAppController
 
 #pragma mark Internal interface
-
+-(void)updateStationsIfNeeded
+{
+    if(![[NSUserDefaults standardUserDefaults]boolForKey:@"StationsUpdated"] || ![[self.dataCache listOfStations]count])
+    {
+        [self refreshStations];
+        
+        [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"StationsUpdated"];
+        [[NSUserDefaults standardUserDefaults]synchronize];
+    }
+}
 
 #pragma mark Allocation and Deallocation
 -(id)init
@@ -24,6 +33,8 @@
     self.dataCache = [[RDDataCache alloc]init];
     self.networkManager = [[RDNetworkOperationManager alloc]init];
     self.locationManager = [[RDLocationManager alloc]init];
+    
+    [self updateStationsIfNeeded];
     
     return self;
 }
@@ -43,6 +54,34 @@
 -(NSArray*)listOfStations
 {
     return [self.dataCache listOfStations];
+}
+
+-(void)refreshStations
+{
+    if(self.refreshingStations)
+    {
+        return;
+    }
+    
+    NSLog(@"Will refresh stations.");
+    
+    self.refreshingStations = YES;
+    
+    [self.networkManager downloadDescriptionsForAllStationsWithCompletionBlock:^(BOOL completed, NSError *error) {
+        self.refreshingStations = NO;
+        
+        if(completed)
+        {
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"StationsUpdated" object:self];
+        }
+        
+        NSLog(@"Refresh stations finished.");
+        
+    } withStationDownloadedBlock:^(NSDictionary *stationDescription) {
+        
+        [self.dataCache addStationWithInfo:stationDescription];
+        
+    }];
 }
 
 @end

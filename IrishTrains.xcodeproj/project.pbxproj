@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A360EAE1748F38400709DE6 /* RDStationMovementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A360EAD1748F38400709DE6 /* RDStationMovementCell.m */; };
+		7A360EAF1748F38400709DE6 /* RDStationMovementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A360EAD1748F38400709DE6 /* RDStationMovementCell.m */; };
 		7AE1E05C174417E700A94C38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE1E05B174417E700A94C38 /* UIKit.framework */; };
 		7AE1E05E174417E700A94C38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE1E05D174417E700A94C38 /* Foundation.framework */; };
 		7AE1E060174417E700A94C38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE1E05F174417E700A94C38 /* CoreGraphics.framework */; };
@@ -76,6 +78,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A360EAC1748F38400709DE6 /* RDStationMovementCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDStationMovementCell.h; sourceTree = "<group>"; };
+		7A360EAD1748F38400709DE6 /* RDStationMovementCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDStationMovementCell.m; sourceTree = "<group>"; };
 		7AE1E058174417E700A94C38 /* IrishTrains.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrishTrains.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE1E05B174417E700A94C38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7AE1E05D174417E700A94C38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -245,6 +249,8 @@
 				7AF6A57B174588A300030C16 /* RDStationDetailsViewController.m */,
 				7AE1E079174417E800A94C38 /* RDViewController.h */,
 				7AE1E07A174417E800A94C38 /* RDViewController.m */,
+				7A360EAC1748F38400709DE6 /* RDStationMovementCell.h */,
+				7A360EAD1748F38400709DE6 /* RDStationMovementCell.m */,
 			);
 			name = "UI Classes";
 			sourceTree = "<group>";
@@ -453,6 +459,7 @@
 				7AF6A58E17458FEE00030C16 /* RDTrainStop.m in Sources */,
 				7AF6A59217458FEE00030C16 /* RDCacheEntity.m in Sources */,
 				7AF6A59617459BD100030C16 /* RDXmlParserHelper.m in Sources */,
+				7A360EAE1748F38400709DE6 /* RDStationMovementCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +479,7 @@
 				7AF6A58F17458FEE00030C16 /* RDTrainStop.m in Sources */,
 				7AF6A59317458FEE00030C16 /* RDCacheEntity.m in Sources */,
 				7AF6A59717459BD100030C16 /* RDXmlParserHelper.m in Sources */,
+				7A360EAF1748F38400709DE6 /* RDStationMovementCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
