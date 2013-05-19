@@ -47,7 +47,7 @@
 
 -(void)setMyLocationTextLabelTextWithLocation:(CLLocation*)location
 {
-    self.myLocationTextLabel.text = [NSString stringWithFormat:@"My Location: %.4f Lat; %.4f Lon",location.coordinate.latitude,location.coordinate.latitude];
+    self.myLocationTextLabel.text = [NSString stringWithFormat:@"My Location: %.4f Lat; %.4f Lon",location.coordinate.latitude,location.coordinate.longitude];
 }
 
 -(void)onLocationUpdated:(NSNotification*)notification
