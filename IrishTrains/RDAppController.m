@@ -3,7 +3,8 @@
 //  IrishTrains
 //
 //  Created by Oleksiy Ivanov on 5/15/13.
-//  Copyright (c) 2013 Oleksiy Ivanov. All rights reserved.
+//  Copyright (c) 2013 Oleksiy Ivanov.
+//  The MIT License (MIT).
 //
 
 #import "RDAppController.h"
@@ -14,10 +15,9 @@
 @implementation RDAppController
 
 #pragma mark Internal interface
--(void)updateStationsIfNeeded
+- (void)updateStationsIfNeeded
 {
-    if(![[NSUserDefaults standardUserDefaults]boolForKey:@"StationsUpdated"] || ![[self.dataCache listOfStations]count])
-    {
+    if( ![[NSUserDefaults standardUserDefaults]boolForKey:@"StationsUpdated"] || ![[self.dataCache listOfStations]count]) {
         [self refreshStations];
         
         [[NSUserDefaults standardUserDefaults]setBool:YES forKey:@"StationsUpdated"];
@@ -26,7 +26,7 @@
 }
 
 #pragma mark Allocation and Deallocation
--(id)init
+- (instancetype)init
 {
     self = [super init];
     
@@ -40,7 +40,7 @@
 }
 
 #pragma mark Public interface
--(void)requestUpdatedUserLocation
+- (void)requestUpdatedUserLocation
 {
     [self.locationManager requestLocationWithMaxAcquisitionTime:30 withPrecisionBetterThan:1000 withCompletionBlock:^(CLLocation *location, NSString *errorDescription) {
         
@@ -51,15 +51,14 @@
     }];
 }
 
--(NSArray*)listOfStations
+- (NSArray *)listOfStations
 {
     return [self.dataCache listOfStations];
 }
 
--(void)refreshStations
+- (void)refreshStations
 {
-    if(self.refreshingStations)
-    {
+    if (self.refreshingStations) {
         return;
     }
     
@@ -70,8 +69,7 @@
     [self.networkManager downloadDescriptionsForAllStationsWithCompletionBlock:^(BOOL completed, NSError *error) {
         self.refreshingStations = NO;
         
-        if(completed)
-        {
+        if (completed) {
             [[NSNotificationCenter defaultCenter]postNotificationName:@"StationsUpdated" object:self];
         }
         

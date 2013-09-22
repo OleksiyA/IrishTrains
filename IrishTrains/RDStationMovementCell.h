@@ -3,15 +3,16 @@
 //  IrishTrains
 //
 //  Created by Oleksiy Ivanov on 5/19/13.
-//  Copyright (c) 2013 Oleksiy Ivanov. All rights reserved.
+//  Copyright (c) 2013 Oleksiy Ivanov.
+//  The MIT License (MIT).
 //
 
 #import <UIKit/UIKit.h>
 
 @interface RDStationMovementCell : UITableViewCell
 
-@property(strong)NSDictionary*              descriptionForStationMovement;
+@property (strong, nonatomic) NSDictionary *descriptionForStationMovement;
 
--(void)setDescriptionAndRefresh:(NSDictionary*)descriptionForStationMovement;
+- (void)setDescriptionAndRefresh:(NSDictionary *)descriptionForStationMovement;
 
 @end

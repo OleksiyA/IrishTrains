@@ -3,7 +3,8 @@
 //  IrishTrains
 //
 //  Created by Oleksiy Ivanov on 5/17/13.
-//  Copyright (c) 2013 Oleksiy Ivanov. All rights reserved.
+//  Copyright (c) 2013 Oleksiy Ivanov.
+//  The MIT License (MIT).
 //
 
 #import "RDStationCell.h"
@@ -12,13 +13,13 @@
 @implementation RDStationCell
 
 #pragma mark Internal interface
--(void)refreshUI
+- (void)refreshUI
 {
     self.textLabel.text = self.station.stationDesc;
 }
 
 #pragma mark Public Interface
--(void)setStationObjectAndRefresh:(RDStation*)station
+- (void)setStationObjectAndRefresh:(RDStation *)station
 {
     self.station = station;
     

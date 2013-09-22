@@ -3,7 +3,8 @@
 //  IrishTrains
 //
 //  Created by Oleksiy Ivanov on 5/15/13.
-//  Copyright (c) 2013 Oleksiy Ivanov. All rights reserved.
+//  Copyright (c) 2013 Oleksiy Ivanov.
+//  The MIT License (MIT).
 //
 
 #import <UIKit/UIKit.h>
@@ -14,8 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *myLocationTextLabel;
 @property (weak, nonatomic) IBOutlet UITableView *tableViewStations;
 
-@property (strong)NSArray*                  stations;
-@property (strong)CLLocation*               latestLocation;
+@property (strong, nonatomic) NSArray *stations;
+@property (strong, nonatomic) CLLocation *latestLocation;
 
 - (IBAction)onRefreshTouched:(id)sender;
 

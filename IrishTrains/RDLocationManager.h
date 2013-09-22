@@ -3,7 +3,8 @@
 //  IrishTrains
 //
 //  Created by Oleksiy Ivanov on 5/16/13.
-//  Copyright (c) 2013 Oleksiy Ivanov. All rights reserved.
+//  Copyright (c) 2013 Oleksiy Ivanov.
+//  The MIT License (MIT).
 //
 
 #import <Foundation/Foundation.h>
@@ -11,13 +12,13 @@
 
 @interface RDLocationManager : NSObject<CLLocationManagerDelegate>
 {
-    void(^completionBlock) (CLLocation* location, NSString* errorDescription);
+    void(^completionBlock) (CLLocation *location, NSString *errorDescription);
 }
 
-@property(strong)CLLocationManager*         locationManager;
-@property(strong)NSTimer*                   timer;
-@property float                             precisionBetterThan;
+@property(strong)CLLocationManager * locationManager;
+@property(strong)NSTimer * timer;
+@property float precisionBetterThan;
 
--(void)requestLocationWithMaxAcquisitionTime:(NSTimeInterval)timeout withPrecisionBetterThan:(float)precisionBetterThan withCompletionBlock:(void(^)(CLLocation* location, NSString* errorDescription))block;
+- (void)requestLocationWithMaxAcquisitionTime:(NSTimeInterval)timeout withPrecisionBetterThan:(float)precisionBetterThan withCompletionBlock:(void(^)(CLLocation *location, NSString *errorDescription))block;
 
 @end

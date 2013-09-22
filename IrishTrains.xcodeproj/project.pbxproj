@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7A360EAE1748F38400709DE6 /* RDStationMovementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A360EAD1748F38400709DE6 /* RDStationMovementCell.m */; };
 		7A360EAF1748F38400709DE6 /* RDStationMovementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A360EAD1748F38400709DE6 /* RDStationMovementCell.m */; };
+		7A868DA417EF839C008C46D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A868DA317EF839C008C46D0 /* Images.xcassets */; };
 		7AE1E05C174417E700A94C38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE1E05B174417E700A94C38 /* UIKit.framework */; };
 		7AE1E05E174417E700A94C38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE1E05D174417E700A94C38 /* Foundation.framework */; };
 		7AE1E060174417E700A94C38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE1E05F174417E700A94C38 /* CoreGraphics.framework */; };
@@ -80,6 +81,8 @@
 /* Begin PBXFileReference section */
 		7A360EAC1748F38400709DE6 /* RDStationMovementCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDStationMovementCell.h; sourceTree = "<group>"; };
 		7A360EAD1748F38400709DE6 /* RDStationMovementCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDStationMovementCell.m; sourceTree = "<group>"; };
+		7A868DA017EF7C4C008C46D0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		7A868DA317EF839C008C46D0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7AE1E058174417E700A94C38 /* IrishTrains.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrishTrains.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE1E05B174417E700A94C38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7AE1E05D174417E700A94C38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -160,6 +163,7 @@
 		7AE1E04F174417E700A94C38 = {
 			isa = PBXGroup;
 			children = (
+				7A868DA017EF7C4C008C46D0 /* README.md */,
 				7AE1E061174417E700A94C38 /* IrishTrains */,
 				7AE1E088174417E800A94C38 /* IrishTrainsTests */,
 				7AE1E05A174417E700A94C38 /* Frameworks */,
@@ -202,6 +206,7 @@
 				7AE1E062174417E700A94C38 /* Supporting Files */,
 				7AE1E0A0174421DD00A94C38 /* third-party */,
 				7AE1E0991744191A00A94C38 /* UI Classes */,
+				7A868DA317EF839C008C46D0 /* Images.xcassets */,
 			);
 			path = IrishTrains;
 			sourceTree = "<group>";
@@ -358,6 +363,11 @@
 				CLASSPREFIX = RD;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Oleksiy Ivanov";
+				TargetAttributes = {
+					7AE1E057174417E700A94C38 = {
+						DevelopmentTeam = RQW96GL67X;
+					};
+				};
 			};
 			buildConfigurationList = 7AE1E053174417E700A94C38 /* Build configuration list for PBXProject "IrishTrains" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -408,6 +418,7 @@
 				7AE1E066174417E700A94C38 /* InfoPlist.strings in Resources */,
 				7AE1E06E174417E800A94C38 /* Default.png in Resources */,
 				7AE1E070174417E800A94C38 /* Default@2x.png in Resources */,
+				7A868DA417EF839C008C46D0 /* Images.xcassets in Resources */,
 				7AE1E072174417E800A94C38 /* Default-568h@2x.png in Resources */,
 				7AE1E075174417E800A94C38 /* MainStoryboard.storyboard in Resources */,
 			);
@@ -582,12 +593,17 @@
 		7AE1E094174417E800A94C38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IrishTrains/IrishTrains-Prefix.pch";
 				HEADER_SEARCH_PATHS = "IrishTrains/third-party/gtm-http-fetcher/Source";
 				INFOPLIST_FILE = "IrishTrains/IrishTrains-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1F12FF50-37F3-4B95-930C-752AB306E6FB";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -595,12 +611,17 @@
 		7AE1E095174417E800A94C38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IrishTrains/IrishTrains-Prefix.pch";
 				HEADER_SEARCH_PATHS = "IrishTrains/third-party/gtm-http-fetcher/Source";
 				INFOPLIST_FILE = "IrishTrains/IrishTrains-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1F12FF50-37F3-4B95-930C-752AB306E6FB";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

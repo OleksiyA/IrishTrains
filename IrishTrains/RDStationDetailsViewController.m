@@ -3,7 +3,8 @@
 //  IrishTrains
 //
 //  Created by Oleksiy Ivanov on 5/17/13.
-//  Copyright (c) 2013 Oleksiy Ivanov. All rights reserved.
+//  Copyright (c) 2013 Oleksiy Ivanov.
+//  The MIT License (MIT).
 //
 
 #import "RDStationDetailsViewController.h"
@@ -16,76 +17,65 @@
 @implementation RDStationDetailsViewController
 
 #pragma mark Internal interface
--(void)sortData
+- (void)sortData
 {
     self.stationUsage = [self.stationUsage sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
         
-        NSDictionary* movementFirst = obj1;
-        NSDictionary* movementSecond = obj2;
+        NSDictionary *movementFirst = obj1;
+        NSDictionary *movementSecond = obj2;
         
         NSTimeInterval dueFirst = [[movementFirst objectForKey:@"Duein"]doubleValue];
         NSTimeInterval dueSecond = [[movementSecond objectForKey:@"Duein"]doubleValue];
         
-        if(dueFirst < dueSecond)
-        {
+        if (dueFirst < dueSecond) {
             return  NSOrderedAscending;
-        }
-        else if(dueFirst > dueSecond)
-        {
+        } else if (dueFirst > dueSecond) {
             return NSOrderedDescending;
         }
         
         return NSOrderedSame;
-        
     }];
 }
 
--(void)refreshStationUsage
+- (void)refreshStationUsage
 {
     self.informationTextLabel.text = @"Downloading Trains Information ...";
     
     __weak RDStationDetailsViewController* selfWeak = self;
     
-    [[[(RDAppDelegate*)[[UIApplication sharedApplication]delegate]appController]networkManager]downloadStationUsageForStation:self.station.stationDesc withCompletionBlock:^(NSArray *stationUsageDescriptions, BOOL completed) {
+    [[[(RDAppDelegate *)[[UIApplication sharedApplication]delegate]appController]networkManager]downloadStationUsageForStation:self.station.stationDesc withCompletionBlock:^(NSArray *stationUsageDescriptions, BOOL completed) {
         
-        if(!selfWeak)
-        {
+        if (!selfWeak) {
             //self was deallocated, do nothing
             return;
         }
         
-        if(completed)
-        {
+        if (completed) {
             self.stationUsage = stationUsageDescriptions;
             [self sortData];
             [self.tableView reloadData];
             
-            if([self.stationUsage count])
-            {
+            if ([self.stationUsage count]) {
                 self.informationTextLabel.text = @"Trains Information";
-            }
-            else
-            {
+            } else {
                 self.informationTextLabel.text = @"No Trains in next 90 min";
             }
-        }
-        else
-        {
+        } else {
             self.informationTextLabel.text = @"Error Updaing Station";
         }
     }];
     
     double delayInSeconds = 60.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void) {
         
-        if(!selfWeak)
-        {
-            //self was deallocated, do nothing
+        __strong typeof (selfWeak) selfStrong = selfWeak;
+        if (!selfStrong) {
+            // self was deallocated, do nothing
             return;
         }
         
-        [selfWeak refreshStationUsage];
+        [selfStrong refreshStationUsage];
     });
 }
 
@@ -105,7 +95,7 @@
 	// Do any additional setup after loading the view.
 }
 
--(void)viewWillAppear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
@@ -127,7 +117,7 @@
 {
     NSDictionary* descriptionForStationMovement = [self.stationUsage objectAtIndex:indexPath.row];
     
-    RDStationMovementCell* cell = [self.tableView dequeueReusableCellWithIdentifier:@"StationMovement"];
+    RDStationMovementCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"StationMovement"];
     
     [cell setDescriptionAndRefresh:descriptionForStationMovement];
     

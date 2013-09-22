@@ -3,7 +3,8 @@
 //  IrishTrains
 //
 //  Created by Oleksiy Ivanov on 5/17/13.
-//  Copyright (c) 2013 Oleksiy Ivanov. All rights reserved.
+//  Copyright (c) 2013 Oleksiy Ivanov.
+//  The MIT License (MIT).
 //
 
 #import <UIKit/UIKit.h>
@@ -16,7 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *informationTextLabel;
 
 
-@property(strong)RDStation*         station;
-@property(strong)NSArray*           stationUsage;
+@property (strong, nonatomic) RDStation *station;
+@property (strong, nonatomic) NSArray *stationUsage;
 
 @end

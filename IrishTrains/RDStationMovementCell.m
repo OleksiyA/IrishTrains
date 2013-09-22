@@ -3,7 +3,8 @@
 //  IrishTrains
 //
 //  Created by Oleksiy Ivanov on 5/19/13.
-//  Copyright (c) 2013 Oleksiy Ivanov. All rights reserved.
+//  Copyright (c) 2013 Oleksiy Ivanov.
+//  The MIT License (MIT).
 //
 
 #import "RDStationMovementCell.h"
@@ -19,9 +20,9 @@
 }
 
 #pragma mark Public interface
--(void)setDescriptionAndRefresh:(NSDictionary*)descriptionForStationMovement
+- (void)setDescriptionAndRefresh:(NSDictionary *)descriptionForStationMovement
 {
-    self.textLabel.text = [NSString stringWithFormat:@"%@-%@ in %@ min",[descriptionForStationMovement objectForKey:@"Origin"],[descriptionForStationMovement objectForKey:@"Destination"],[descriptionForStationMovement objectForKey:@"Duein"]];
+    self.textLabel.text = [NSString stringWithFormat:@"%@-%@ in %@ min", [descriptionForStationMovement objectForKey:@"Origin"], [descriptionForStationMovement objectForKey:@"Destination"], [descriptionForStationMovement objectForKey:@"Duein"]];
 }
 
 @end

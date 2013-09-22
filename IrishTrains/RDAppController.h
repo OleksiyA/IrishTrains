@@ -3,7 +3,8 @@
 //  IrishTrains
 //
 //  Created by Oleksiy Ivanov on 5/15/13.
-//  Copyright (c) 2013 Oleksiy Ivanov. All rights reserved.
+//  Copyright (c) 2013 Oleksiy Ivanov.
+//  The MIT License (MIT).
 //
 
 #import <Foundation/Foundation.h>
@@ -14,14 +15,14 @@
 
 @interface RDAppController : NSObject
 
-@property(strong)RDDataCache*                   dataCache;
-@property(strong)RDNetworkOperationManager*     networkManager;
-@property(strong)RDLocationManager*             locationManager;
+@property(strong)RDDataCache * dataCache;
+@property(strong)RDNetworkOperationManager * networkManager;
+@property(strong)RDLocationManager * locationManager;
 
-@property BOOL                                  refreshingStations;
+@property BOOL refreshingStations;
 
--(void)requestUpdatedUserLocation;
--(NSArray*)listOfStations;
--(void)refreshStations;
+- (void)requestUpdatedUserLocation;
+- (NSArray *)listOfStations;
+- (void)refreshStations;
 
 @end
